@@ -1,0 +1,141 @@
+
+
+body {
+   font-family:Lora;
+}
+
+.nav-pills{
+  font-size: 1.7em;
+  background-color:black;
+  margin-bottom:12%;
+  opacity:.8; 
+}
+
+.nav-pills a {
+  color:white;
+}
+
+a:hover{
+  color:blue;
+}
+
+#pageOne {
+  background: url("https://images.unsplash.com/photo-1512753360435-329c4535a9a7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=c1f8c15fb840f4c3775c29e6cedc3303");
+   background-size:cover;
+  padding-bottom: 15%
+  
+}
+
+h4 {
+  margin-top:30px;
+}
+
+.btn-default {
+  background-color:grey;;
+  color:white;
+  border-radius: 10%;
+  font-size: 1.6em;
+  margin-top:20px;
+  opacity:.75;
+}
+
+#firstContainer {
+  background-color:black;
+  opacity:.6;
+  color:white;
+  width:30%;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius:10%;
+  padding-top:20px;
+  padding-bottom:20px;
+  height:25%;
+ 
+}
+
+#facebookIcon{
+  color:#3b5998;
+}
+#linkedinIcon{
+  color:#007bb5;
+}
+#instagramIcon{
+  color:#bc2a8d;
+}
+#githubIcon{
+  color: rgb(102,43,129);
+}
+
+#pageTwo {
+  background-color: #D9D9E1;
+  padding-bottom:8%;
+  padding-top:8%;
+  padding-left:7%;
+  padding-right:7%;
+  
+}
+
+p {
+  font-size:1.5em;
+  margin-top: 10px;
+  margin-bottom:30px;
+}
+
+.me {
+  margin-top:25px;
+  height:380px;
+  border-radius:2%
+}
+
+.portfolioTitle{
+  padding-top:5%;
+  padding-bottom:3%;
+  
+}
+
+#pageThree{
+  padding-left: 14%;
+  padding-right:14%;
+  padding-bottom:8%;
+}
+
+.projDesc{
+  
+}
+.portfolioRow{
+  padding-bottom:3.5%;
+}
+
+#pageFour {
+  padding-top:6%;
+  background: url("https://images.unsplash.com/photo-1446426156356-92b664d86b77?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=8e29950dae47cb04803f42429be3abee");
+  background-size:cover;
+  padding-bottom:14%;
+  padding-right:14%;
+  padding-left:14%;
+}
+
+.contactTitle{
+  font-size:3.0em;
+  padding-bottom:1%;
+}
+
+.send-button{
+  font-size:3.0em;
+  margin-left: 2%;
+}
+
+.footer {
+  background-color:grey;
+  margin-top:-3%;
+  padding-top:.5%;
+  padding-bottom:.5%;
+ 
+}
+
+.copyRight{
+  font-size:15px;
+  color:white;
+  
+}
+
