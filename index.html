@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    
+    <!--Line below is necessary for mobile resizing-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <!-- Link for Fav icon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+     <link rel="manifest" href="favicon/site.webmanifest">
+     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#09313d">
+     <meta name="msapplication-TileColor" content="#603cba">
+     <meta name="theme-color" content="#ffffff">
+      <!-- end of favicon -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <script src="javascript.js"></script>
+</head>
+<body>
+   
+    <header>
+        <div class="burgerMenu" onclick="openNav()"><i class="fas fa-bars"></i></div>
+    </header>
+    <!--Sliding Side Nav-->
+    <div id="mySideNav"class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn"onclick="closeNav()"><i class="fas fa-times"></i></a>
+        <ul>
+            <li><a href="#page0">Home</a></li>
+            <li><a href="#pageAbout">About</a></li>
+            <li><a href="#workExperiencePage">Work Experience</a></li>
+            <li><a href="#softwareProjectsPage" id="softwareProjectsNav">Software Projects</a></li>
+            <li class="indented"><a href="#travelWebsite"> - Travel Site</a></li>
+            <li class="indented"><a href="#webApps"> - Web Apps</a></li>
+            <li class="indented"><a href="#iOS"> - iOS App</a></li>
+            <li><a href="#engineeringProjects">Engineering Projects</a></li>
+            <li class="indented"><a href="#bioReactor"> - Algae Bioreactor</a></li>
+            <li class="indented"><a href="#solarCells"> - Solar Cells</a></li>
+        </ul>
+    </div>
+<!--Div containing all page content-->
+<div id="allContent">
+<div id="page0">
+    <img class="pic1" src="profilePic.jpg">
+    <hr>
+    <div class="name">
+        <title class="titleDisplay">Stewart Eaton</title>
+        <text class="capital">S</text><text>tewart <text class="capital">E</text>aton</text>
+    </div>
+
+    <div class="school">
+        <text class="firstLetter">U</text><text>niversity of </text><text class="firstLetter">M</text><text>ississippi '</text><text class="firstLetter">20</text><text>, Chemical Engineering and Computer Science</text>
+    </div>
+
+    <div class="socialLink">
+        <ul class="socialLinks">
+        <li class="email"><a href="mailto:sceaton@go.olemiss.edu"><i class="far fa-envelope"></i></a></li>
+        <li class="email"><a href="https://github.com/stewarteaton" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li class="email"><a href="https://www.linkedin.com/in/stewart-eaton-29802b154" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="pageAbout">
+    <h1>About</h1>
+    <p>Having always possessed a deep curiousity about life and the physics behind how things work, I was driven to study Chemical Engineering.</p>
+    <p>My fascination with technology and the prospect of being able to create meaningful apps to share with the world is leading me to Computer Science and coding.</p>
+    <p>Interested in sustainable energy, eco-friendly businesses, and software development.</p>
+    <p>Currently seeking an internship as a Web Developer, Chemical Engineer, or Software Engineer.</p>
+<!--
+    <a href="javascript:void(0)" class="inDepthBtn" id="inDepthBtn" onclick="expandAbout(this)">In-Depth...</a>
+    <div id="inDepth">
+    <a href="javascript:void(0)" class="moreDetailsBtn" onclick="collapseAbout()">Less Details</a>
+    </div>
+-->
+</div>
+
+<div id="skillsPage">
+    <h1>Some Skills</h1>
+    <div class="skillsContainer">
+    <div class="chemESkills">
+        <h3>Chemical Engineering</h3>
+        <ul>
+            <li>Process Modeling and Simulation</li>
+            <li>Chemical Vapor/Liquid/Solid equilibrium predictive modeling</li>
+            <li>Reactor Design and Analysis</li>
+            <li>Materials/Polymer Science</li>
+            <li>Multi-component Fluid/Thermodynamic system analysis</li>
+            <li>Proficient: PRO II Tools, PolyMath, Excel</li>
+        </ul>
+    </div>
+    <div class="softwareSkills">
+        <h3>Software</h3>
+        <ul>
+            <li>Proficient: Java, JavaScript, HTML/CSS</li>
+            <li>Familiar: Python, Swift, C, MATLAB</li>
+            <li>DataBase: MongoDB, NoSQL</li>
+            <li>Web.Deployment: Heroku, GitHub</li>
+            <li>Web.Frameworks: Express, React, PUG, Redux, JQuery, Bootstrap</li>
+            <li>Web.Troubleshooting: Chrome Developer Tools</li>
+            <li>Version Control: Git</li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+    <div id="workExperiencePage">
+            <h1>Work Experience</h1>
+            <h3>Chemical Engineering Intern: EnerGaia</h3>
+            <h5>(Bangkok, Thailand) - Summer 2018</h5>
+            <p>Managed commercial production of spirulina.</p>
+            <P>Spirulina: single cellular algae cultviated for sustainable food source (<a href="https://energaia.com/" target="_blank">www.energaia.com</a>)</P>
+            <ul>
+                <li>Developed protocol for accurately estimating the frictional pressure drop resulting from fluid and vapor flowing through systems of pipes and tubes </li>
+                <li>Improved speed of harvesting, nutrient re-addition, and tank transfers up to 65% by designing systems of pipes and pumps that transferred liquid algae media at increased flow rates and capacities</li>
+                <li>Conducted experiments on improving algae photo-bioreactor design by manipulating reactor material, air flow, circulation, and volume to surface area ratio</li>
+                <li>Emphasis on implementing economically scalable systems</li>
+                <li><u>Leveraged Knowledge:</u> Fluid Dynamics, Organic Chemistry, Transport Phenomena</li>
+            </ul>
+        </div>
+
+    <div id="softwareProjectsPage"onmouseenter="softwareProjectsHover()" onmouseleave="softwareProjectsLeave()">
+        <h1>Software Projects</h1>
+
+        <div id="travelWebsite">
+            <h3>Travel Booking Website</h3>
+            <h4>[<a href="https://travel-booker.herokuapp.com/" target="_blank">https://travel-booker.herokuapp.com/</a>]</h4>
+                <tag>(Please allow a minute to load...)</tag>
+            <h5><u>Overview:</u></h5>
+            <p>Developed a full stack Node.js demo website that allows users to create an account, query a database, and book hotels. Admins are able to add, remove, or edit existing hotels in a real time cloud database.
+            </br>User input is validated and sanitized for protection, user login uses middleware for authentication, and user sessions are implemented using server side storage and cookies to pass identification.
+            </br>A seperate cloud storage is configured to hold images/videos and add security to files. Various middlewares are used to handle errors and validate/encrypt user data when communicating with the MongoDB database.</br>Environment variables are created to protect all sensitive information.</br>PUG templating language was used to build organized, reusable html.</p>
+            <h5 id="travelUtilized"><u>Utilized:</u></h5>
+            <p class="padDetails" id="travelUtilizedParagraph">Node.js, Express.js, MongoDB, Mongoose, PUG, Cloudinary, Authentication/Validation Middleware, User Sessions, Environment Variables </p>
+            <a href="javascript:void(0)" class="moreDetailsBtn" id="moreDetailsBtn" onclick="expandDetails()">More Details...</a>
+            <div id="moreDetails" class="moreDetails">
+                <h5><u>The Motive:</u></h5>
+                    <p>Having spent lots of time backpacking internationally (Europe, Asia, and counting...), I constantly rely on travel booking websites like hostelworld.com. So I wanted to create my own travel booking application
+                        with similar functionality.
+                    </p>
+                    <p>At the same time, I wanted to further my knowledge of web development and learn how to make a Node.js fullstack application along with a RESTful API backend.</p>
+                <h5><u>The Execution:</u></h5>
+                    <p>This project began from taking an online full stack web development course from skillshare.com. Through this course I was able to learn the process of creating a production build application from scratch while being able to customize any component. </p>
+                    <p>The first step was using the integrated terminal in Visual Studio to install and set up the JavaScript Express framework which uses the Node.js server-side platform. </p>
+                    <p>I decided to install and use PUG in order to structure and organize my HTML. PUG, formerly known as 'Jade', is an open source HTML templating language that provides the ability to write dynamic and reusable HTML documents.</p>
+                    <p>MongoDB was used as the database to store JSON data because of its flexible model and scalability. I implemented MongoDB using mLab's free hosting cloud service offered by Amazon web services.</p>
+                    <p>The Model View Controller (MVC) architecture is used in order to separate the logic into three distinct components</p>
+                    <ul>
+                        <li>Model: For the model section I installed and used Mongoose library to provide object data modeling. With mongoose, I created schemas to map and structure the database by setting parameters required by all forms and information passed back and forth from the database. </li>
+                        <li>View: The user interface was created using PUG, which allowed me to render dynamic data from the database to the interface. I made reusable templates, known as mixins, to display frequently accessed interfaces such as hotel listings, search forms, and database forms. When calling these mixins I took advantage of conditional rendering to achieve the desired functionality depending on the user request.</li>
+                        <li>Controller: The controllers are JavaScript files that provide the functionality of sending and recieving data from the database and connecting the models and interface. Asnychronous database requests were utilized to allow the browser to remain responsive while making sure the requests were fully processed before the results were rendered.
+                            <ul>
+                                <li>User: I created a controller to handle all user login, validation, and session information. When signing up, the express validation and sanitization node modules were configured to check all user input to prevent any malicious data being passed to the database. Passport middleware was installed and used to authenticate users when logging in, and bcyrpt.js middleware was installed to encrypt(salt) passwords in the database for added security. This controller also provides the logic for sending booking information to database and creating orders in database within individual user accounts.</li>
+                                <li>Hotel: This controller handles posting, editing, and removing hotels from the database. Cloudinary and Multer middleware are installed and used to post images directly to cloud storage, where they are later requested when rendered. This controller parses the user search queries and sends that information to the database using the aggregation pipeline to match data from mutlipile documents and return the desired results to the interface.
+                            </ul>
+                        </li> 
+                    </ul>
+                    <p>Express router perfomed get and post requests for specified HTTP addresses between client and server by linking the url with javascript controllers. Passed middleware through router with callback functions.</p>
+                    <p>Configuring user sessions was achieved by installing express-session and connect-mongo, and then setting up the session as middleware and passing a secret key to sign cookies. Every time a user successfully signs in a session is created by passing user id stored in cookie to server and in turn recieves user information.
+                    </br>With sessions properly working, I then installed connect-flash and configured it as middleware in order to present flash messages which notify users when actions were successfully executed or not.
+                     </p>
+                    
+                    <p>Environment variables created by collecting all sensitive infomration in a .env file. This includes the MongoDB connection link, Cloudinary api secret and key, and the secret used for signing cookies in user sessions. Dotenv package was installed and configured allowing environment varialbes values to be used while keeping them protected.</p>
+                    <p>Compression was intalled and used to prepare app for production along with the helmet package for added security before deployment to Heroku.</p>
+                <h5><u>Utilized:</u></h5>
+                <p class="padDetails">Node.js, Express.js, MongoDB, Mongoose, PUG, Cloudinary, Authentication/Validation Middleware, User Sessions, Environment Variables </p>
+                <a href="javascript:void(0)" class="moreDetailsBtn" onclick="collapseDetails()">Less Details</a>
+            </div>
+            <a href="https://travel-booker.herokuapp.com/" target="_blank">
+                <video class="travelBookerVideo" autoplay>
+                        <source src="project pics/travelBookerVideo.mp4" type="video/mp4">
+                </video>
+            </a>
+        </div>
+
+        <div id="webApps">
+            <h3>Web Apps</h3>
+            <h5><u>Overview:</u></h5>
+            <p class="pMargin">This is a compilation of some web apps I've created</p>
+            <h5><u>The Motive:</u></h5>
+            <p class="pMargin">To learn, you must do. I starting teaching myself how to create basic apps like these to build a foundation of programming knowledge.</p>
+            <div id="row0" class="row0">
+                <div class="column">
+                    <img src="project pics/companyTasks.png" class=" galleryPic">
+                    <p class="projDesc">Click <a href="https://company-goal-lists.herokuapp.com/signin" target="_blank">HERE</a> to test.</p>
+                        <tag>(Pls allow 1 min to load...)</tag>
+                    <p class="projDescSmall">This app uses Redux and React Router to create a multipage website with browser history along with google's Firebase for user authentication and real time database implementation</p>
+                </div>
+                <div class="column">
+                    <img src="project pics/jsCalulatorPic.png" class="galleryPic">
+                    <p class="projDesc">Click <a href="https://codepen.io/stewmeista/full/oqaGMR/" target="_blank">HERE</a> to test.</p>
+                    <p class="projDescSmall">Calculator made with JavaScript, HTML, CSS, and frameworks including jQuery.</p>                                            
+                </div>
+                <div class="column">
+                        <img src="project pics/reminder-pro-pic.png" class="reminderProPic galleryPic">
+                        <p class="projDesc">Click <a href="https://react-redux-reminder.herokuapp.com/" target="_blank">HERE</a> to test.</p>
+                         <tag>(Pls allow 1 min to load...)</tag>
+                        <p class="projDescSmall">This reminder app makes use of the Redux js library to manage dynamic changing state with React js library implemnted for creating the interface. This app enables cookies to remeber the users list of to do items.</p>
+                    </div>    
+                
+            </div>
+            <div id="row1" class="row1">
+                <div class="column">
+                        <img src="project pics/weatherAppPic.png" class="galleryPic">
+                        <p class="projDesc">Click <a href="https://codepen.io/stewmeista/full/PQNeQj/" target="_blank">HERE</a> to test.</p>
+                        <p class="projDescSmall">Weather app uses geolocation to access users coordinates, and then makes a JSON call to weathermap API while implementing changing icon to match current conditions</p>
+                </div>
+                <div class="column">
+                        <img src="project pics/wikiSearchPic.png" class="galleryPic">
+                        <p class="projDesc">Click <a href="https://codepen.io/stewmeista/full/wyPNQR/" target="_blank">HERE</a> to test.</p>
+                        <p class="projDescSmall">Wiki search viewer takes user input and calls Wikipedia API using JSON to display results</p>
+                 </div>
+                <div class="column">
+                        <img src="project pics/pomodoro-clock-pic.png" class="pomodoroClockPic galleryPic">
+                        <p class="projDesc">Click <a href="https://codepen.io/stewmeista/full/wmLyZm/" target="_blank">HERE</a> to test.</p>
+                        <p class="projDescSmall">A pomodoro clock created using plain HTML,CSS,Bootstrap, and JavaScript with the jQuery library to control the DOM.</p>                        
+                </div>
+        
+            </div>
+        </div>
+
+        <div id="iOS">
+                <h3>iOS App</h3>
+                <h5><u>Overview:</u></h5>
+                <p>Coming soon...</p>
+                <h5><u>Utilized:</u></h5>
+                <p class="padDetails">Coming soon...</p>
+                <a href="javascript:void(0)" class="moreiOSDetailsBtn" id="moreiOSDetailsBtn" onclick="expandiOS()">More Details...</a>
+                <div id="iOSDetails" class="iOSDetails">
+                        <h5>The Motive:</h5>
+                        <p>Coming soon...</p>
+                        <a href="javascript:void(0)" class="moreiOSDetails" onclick="collapseiOS()">Less Details</a>
+                    </div>
+            </div>
+    </div>
+
+    <div id="engineeringProjects">
+        <div id="bioReactor">
+            <h1>Engineering Projects</h1>
+            <h3>Algae Photo-Bioreactor</h3>
+            <h5><u>Overview:</u></h5>
+            <p>Created a bioreactor designed to grow a specialized algae, or cyanobacteria, known as spirulina. Spirulina is an edible algae that boasts a remarkable nutrition profile. Studied the effects of pH, salinity, light energy, and chemical nutrients with respect to the algae's growth productivity and quality</p>
+            <h5><u>Utilized:</u></h5>
+            <p class="padDetails">Chemistry and reactor kinetics</p>
+            <a href="javascript:void(0)" class="moreAlgaeBtn" id="moreAlgaeBtn" onclick="expandAlgae()">More Details...</a>
+            <div id="algaeDetails" class="algaeDetails">
+                    <h5><u>The Motive:</u></h5>
+                    <p>Algae has many special and unique characteristics which enable future opportunities to reshape several industries including pollution control, commercial food, pharmaceutical, wastewater treatment, and biofuels to name a few.</p>
+                    <p>I wanted to cultivate my own spirulina in order further my understanding of the biochemical process of successfully producing algae along with the desire to process and consume my spirulina as a nutritional supplement.</p>
+                    <h5><u>The Execution:</u></h5>
+                    <p>Spirulina grows optimally in strong sun light, high temperatures, and strong alkaline environments.<br>There are 4 main parameters to consider when attempting to grow spriluna: 
+                        <ul>
+                            <li><u>1. Culture Medium:</u> it's mandatory to supply the spirulina with the right nutrients and water conditions to grow. First I filled my reactor with distilled water to prevent the chance of other mircoorganisms contaminating the media. Spirulina needs the following:
+                            <ul>
+                                <li>Highly alkaline water: approximately pH of 10</li>
+                                <li>Source of nitrogen, iron, phosphorous, potassium, and sulfur</li>
+                                <li>Source of carbon</li>
+                                <li>Trace amounts of chlorine, calcium, and magnesium</li>
+                            </ul>
+                            <img src="project pics/spirulinaNutrients.JPG"></br>
+                            I used food grade NaHCO3(sodium bicarbonate) to achieve elevated alkalinity and NaNO3(sodium nitrate) as a source of fixed nitrogen. KCl(potassium chloride), Na2SO4(sodium sulfate), and NaH2PO4(sodium phosphate) is dissolved together to provide potassium, chlorine, sulfur, and phosphorous.</br>
+                            Lastly, I added small percentages FeSO4*7H2O(iron sulfate), MgSO4*7H2O(magnesium sulfate), and CaCl2*2H20(calcium chloride) to supplement iron, magnesium and calcium.
+                            </li>
+                            <li><u>2. Light:</u> For optimal growth its recommended to expose spirulina to 16 hours of light per day with an intensity up to 120,000 lux. Due to my limitations of using an indoor reactor, I decided to place my tank next to a window recieving lots of sunlight. I supplemented the natural ambient light with an artificial grow light. </li>
+                            <li><u>3. Temperature:</u></li>
+                            <li><u>4. Mixing:</u></li>
+                            <li><u>5. Reactor:</u></li>
+                        </ul>
+                    </p>
+                    <a href="javascript:void(0)" class="moreAlgaeDetails" onclick="collapseAlgae()">Less Details</a>
+            </div>
+            <img src="project pics/bioreactorPic2.jpg" class="reactorPic">
+        </div>
+        <div id="solarCells">
+            <h3>Solar Cells DIY</h3>
+            <h5>Overview:</h5>
+            <p>Coming soon...</p>
+            <h5>Utilized:</h5>
+            <p class="padDetails">Coming soon...</p>
+            <a href="javascript:void(0)" class="moreSolarBtn" id="moreSolarBtn" onclick="expandSolar()">More Details...</a>
+            <div id="solarDetails" class="solarDetails">
+                    <h5>The Motive:</h5>
+                    <p>Coming soon...</p>
+                    <a href="javascript:void(0)" class="moreSolarDetails" onclick="collapseSolar()">Less Details</a>
+            </div>
+        </div>
+            
+    </div>
+
+    <div id="space">
+
+    </div>
+</div>
+</body>
+
+</html>
